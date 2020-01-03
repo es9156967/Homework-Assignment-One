@@ -15,19 +15,10 @@ body {
 
 /*HEADER CSS*/
 
-
-nav {
-    height: 15vh;
-    padding: auto;
-    width: 100%;
-    background-color: #ffffff;
-    border-bottom: #cccccc solid;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-}
-
 h1 {
     font-size: 150%;
     color: #4aaaa5;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
 main {
@@ -62,11 +53,15 @@ main img {
 
 /* NAV CSS */
 
-#nav {
+nav {
+    height: 90px;
+    padding: auto;
     width: 100%;
     background-color: #ffffff;
-    border-bottom: 1px solid black;
+    border-bottom: #cccccc solid;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
+
 
 #nav div {
     width: 960px;
@@ -78,8 +73,8 @@ main img {
     font-size: 175%;
     color: #ffffff;
     background: #4aaaa5;
-    margin-top: 20px;
-    padding: 20px 30px;
+    margin-top: 0;
+    padding: 29px 29px;
     float: left;
     display: inline-block;
 }
@@ -93,39 +88,22 @@ main img {
     float: right;
 }
 
-/* FOOTER CSS */ 
-
-footer {
-    background: #666666;
-    border-top: 8px solid #4aaaa5;
-    /* clear: both; */
-}
-
-footer p {
-    margin: 90px auto 0;
-    color: #ffffff;
-    display: inline-block;
-}
-
 
 /* /* /*FORMS*/
-#forms {
-    width: 100%;
-    padding: 100px;
-}
-
 form {
     font-size: 15px;
     color: #E8F6FF;
     display: flex;
     flex-direction: column;
     background: #ffffff;
-    padding: 50px;
-    height: 70vh;
-    width: 500px;
+    padding: 20px;
+    height: 500px;
+    width: 960x;
     text-align: left;
-    margin: 0 auto;
-    border: #666666 1px solid;
+    margin-top: auto;
+    border: #dddddd 1px solid;
+    position: relative;
+    line-height: 15px;
 }
 
 input[type=text]{
@@ -135,6 +113,20 @@ input[type=text]{
     background: #ffffff;
     box-sizing: border-box;
 
+}
+
+textarea{
+    height:200px;
+}
+
+section {
+    background: #ffffff;
+    border: solid 1px #dddddd;
+    width: 650px;
+    float: left;
+    margin-bottom: 20px;
+    overflow: auto;
+    position: relative;
 }
 
 form p{
@@ -148,23 +140,21 @@ form .submit {
     background: #4aaaa5;
     width: 100px;
     text-align: center;
-    border: 2px solid;
+    color: #ffffff;
 }
 
-#message {
-    height: 100px;
-} 
+.contacts {
+    color: #777777;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
 
-#submit{
-    padding: 5px;
-    color: #ffffff;
-} 
+/*Portfolio CSS*/
 
 .portfolio-image{
     position: relative;
     float:left;
     width: 274px;
-    margin: 20px 20px 25px;
+    margin: 15px 15px 20px;
     overflow: auto;
 }
 
@@ -174,6 +164,7 @@ form .submit {
 
 .portfolio-image img {
     width: 100%;
+    margin-top: 0;
     border: 0 none;
     opacity: 0.8;
 }
@@ -181,7 +172,7 @@ form .submit {
 .portfolio-image h3 {
     position: absolute;
     bottom: 20px;
-    width: 100%;
+    width: 95%;
     padding:15px;
     margin-bottom: 0;
     font-weight: 300;
@@ -190,5 +181,22 @@ form .submit {
     text-align: center;
     background: #4aaaa5;
     border-bottom: 0;
+}
+/* FOOTER CSS */ 
 
+footer {
+    background: #666666;
+    border-top: 8px solid #4aaaa5;
+   /*  clear: both; */
+   /*  overflow: hidden; */
+   /*  margin-bottom: 0; */
+   /*  padding: 15px; */
+    /* position: fixed; */
+}
+
+footer p {
+    margin: 30px auto 0;
+    color: #ffffff;
+    display: inline-block;
+  /*   position: fixed; */
 }
