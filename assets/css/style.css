@@ -38,6 +38,7 @@ main {
 main img {
     width: 200px;
     padding: 15px 15px 15px 0;
+    float: left;
 }
 
 .float-right {
@@ -184,19 +185,16 @@ form .submit {
 }
 /* FOOTER CSS */ 
 
-footer {
-    background: #666666;
-    border-top: 8px solid #4aaaa5;
-   /*  clear: both; */
-   /*  overflow: hidden; */
-   /*  margin-bottom: 0; */
-   /*  padding: 15px; */
-    /* position: fixed; */
-}
+.footer {
 
-footer p {
-    margin: 30px auto 0;
-    color: #ffffff;
-    display: inline-block;
-  /*   position: fixed; */
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#666666;
+   color: white;
+   text-align: center;
+   border-top: 8px solid #4aaaa5;
+   height: 50px;
+   display: inline-block;
 }
